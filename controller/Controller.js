@@ -343,6 +343,7 @@ class DataController {
   async recoverPassword(req, res) {
 
     try {
+      console.log("Entrou na rota?")
       const user = req.user;
       const newPassword = req.body.newPassword;
       const token = req.token;
